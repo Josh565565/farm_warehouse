@@ -1,0 +1,23 @@
+.smartphone-group {
+  display: flex;
+  margin-top: 10px;
+  gap: 10px;
+
+  label {
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--color-text-gray);
+    font-family: var(--font-family);
+
+    input[type="radio"] {
+      margin-right: 5px;
+    }
+  }
+}
+
+.phone-div {
+  display: block;
+  @media (max-width: 1000px) {
+    display: none;
+  }
+}

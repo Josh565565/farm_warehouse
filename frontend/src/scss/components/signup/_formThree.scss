@@ -1,0 +1,111 @@
+.capture {
+  font-size: small;
+  padding: 15px 0;
+}
+
+.finger-print-container {
+  display: flex;
+  gap: 20px;
+
+  .one-finger-print-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+
+    .finger-print-name {
+      font-family: var(--font-family);
+      font-size: small;
+      color: var(--color-text-gray);
+    }
+  }
+}
+
+.info-container {
+  background-color: #fffcf5;
+  border: 1px solid #fef0c7;
+  border-radius: 8px;
+  padding: 10px;
+  max-width: 330px;
+  margin-top: 20px;
+
+  .second-info-container {
+    display: flex;
+    align-items: start;
+    gap: 5px;
+    padding-right: 15px;
+
+    .info-text {
+      color: #b54708;
+      font-size: x-small;
+    }
+  }
+}
+
+.check-main-container {
+  display: flex;
+  justify-content: end;
+  margin: 20px 25px 0 0;
+
+  @media screen and (max-width: 500px) {
+    margin-right: 0;
+  }
+  .check-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 136px;
+    height: 36px;
+    border: 1px solid #d0d5dd;
+    border-radius: 8px;
+    gap: 8px;
+
+    .skip {
+      color: var(--color-text-gray);
+      font-size: small;
+      font-weight: 500;
+    }
+  }
+}
+
+.three-btn-container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  .three-btn1 {
+    width: 150px;
+    height: 44px;
+    border-radius: 8px;
+    border: 1px solid #eaecf0;
+    background-color: #ffffff;
+    color: var(--color-text-gray);
+    font-size: 1rem;
+    font-weight: 700;
+    font-family: var(--font-family);
+    cursor: pointer;
+    margin-top: 20px;
+  }
+  .three-btn2 {
+    width: 150px;
+    height: 44px;
+    border-radius: 8px;
+    border: none;
+    background-color: var(--color-primary);
+    color: #ffffff;
+    font-size: 1rem;
+    font-weight: 700;
+    font-family: var(--font-family);
+    cursor: pointer;
+    margin-top: 20px;
+  }
+
+  .three-btn2.enabled {
+    background-color: var(--color-primary);
+    cursor: pointer;
+  }
+
+  .three-btn2.disabled {
+    background-color: #90d0bf;
+    cursor: not-allowed;
+  }
+}

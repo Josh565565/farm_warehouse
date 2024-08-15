@@ -1,0 +1,208 @@
+.signin-container {
+  margin-left: 100px;
+
+  @media (max-width: 1150px) {
+    margin-left: 0;
+  }
+
+  .first-signin-create-account {
+    font-size: 2rem;
+    font-family: var(--font-family);
+    font-weight: 700;
+    color: var(--color-text-gray);
+
+    @media (max-width: 500px) {
+      font-size: 1.25rem;
+    }
+  }
+
+  .signin-personal-Info {
+    color: var(--color-text-gray);
+    font-size: 1.125rem;
+    font-weight: 500;
+
+    @media (max-width: 500px) {
+      font-size: 0.875rem;
+    }
+  }
+
+  .form {
+    margin-top: 40px;
+    .login-info {
+      font-family: var(--font-family);
+      font-size: 0.75rem;
+      color: var(--color-text-gray);
+      margin-top: 5px;
+    }
+
+    .form-group {
+      display: flex;
+      flex-direction: column;
+      margin-top: 20px;
+
+      .form-control {
+        width: 372px;
+        height: 40px;
+        border-radius: 10px;
+        border: 1px solid #d0d5dd;
+        padding: 0 10px;
+        font-weight: 500;
+        font-size: 1rem;
+        color: var(--color-text-gray);
+        font-family: var(--font-family);
+        margin-top: 5px;
+
+        @media (max-width: 500px) {
+          width: 330px;
+        }
+      }
+    }
+
+    .password-input-div {
+      display: flex;
+
+      .password-input-container {
+        position: relative;
+        display: flex;
+
+        width: 322px;
+
+        @media (max-width: 500px) {
+          width: 100%;
+        }
+
+        .pass-form-control {
+          width: 294px;
+          height: 40px;
+          border-radius: 10px;
+          border: 1px solid #d0d5dd;
+          padding: 0 10px;
+          font-weight: 500;
+          font-size: 1rem;
+          color: var(--color-text-gray);
+          font-family: var(--font-family);
+          margin-top: 5px;
+
+          @media (max-width: 500px) {
+            width: 277px;
+          }
+        }
+
+        .password-toggle {
+          position: absolute;
+          right: 40px;
+          top: 55%;
+          transform: translateY(-50%);
+          cursor: pointer;
+          color: #667085;
+
+          @media (max-width: 500px) {
+            right: 10px;
+          }
+        }
+      }
+      .fingerprint {
+        margin-left: 0;
+
+        @media (max-width: 500px) {
+          margin-left: 5px;
+        }
+      }
+    }
+
+    .rememberMe-forgot-password-div {
+      display: flex;
+      margin-top: 10px;
+
+      .rememberMe-div {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+
+        .rememberMe-checkbox {
+          appearance: none; /* Remove default checkbox styling */
+          width: 18px;
+          height: 18px;
+          border: 1px solid #d0d5dd;
+          border-radius: 5px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          cursor: pointer;
+          background-color: #fff; /* Initial background color */
+
+          &:checked {
+            background-color: #fff; /* Background color when checked */
+            border: 1px solid #0d8a6a;
+
+            &::after {
+              content: "\2713"; /* Unicode for checkmark */
+              font-size: 12px;
+              font-weight: 900;
+              color: #0d8a6a; /* Arrow color */
+              display: block;
+            }
+          }
+        }
+
+        .rememberMe-text {
+          font-weight: medium;
+          font-family: var(--font-family);
+          font-size: 0.875rem;
+          color: var(--color-text-gray);
+        }
+      }
+
+      .forgot-password-link {
+        font-weight: 600;
+        font-family: var(--font-family);
+        font-size: 0.875rem;
+        color: var(--color-primary);
+        margin-left: auto;
+        cursor: pointer;
+      }
+    }
+
+    .signin-btn {
+      width: 372px;
+      height: 40px;
+      border-radius: 10px;
+      background-color: var(--color-primary);
+      border: none;
+      color: #fff;
+      font-weight: 700;
+      font-size: 1rem;
+      font-family: var(--font-family);
+      margin-top: 30px;
+      cursor: pointer;
+
+      @media (max-width: 500px) {
+        width: 330px;
+      }
+    }
+  }
+
+  .signin-create-account {
+    font-size: 0.875rem;
+    font-family: var(--font-family);
+    font-weight: 400;
+    color: #475467;
+    display: flex;
+    gap: 5px;
+    margin-top: 20px;
+    margin-bottom: 0px;
+    margin-left: 80px;
+
+    @media (max-width: 500px) {
+      font-size: 0.75rem;
+      margin-bottom: 20px;
+    }
+
+    .signup {
+      text-align: center;
+      font-weight: 700;
+      color: var(--color-primary);
+      cursor: pointer;
+    }
+  }
+}

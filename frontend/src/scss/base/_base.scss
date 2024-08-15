@@ -1,0 +1,52 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+:root {
+  --font-family: "Inter", sans-serif;
+  --font-size: 16px;
+  --font-weight-light: 300;
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+  --font-weight-extrabold: 800;
+  --font-weight-black: 900;
+  --line-height: 1.5;
+  --color-bg-primary: #ffffff;
+  --color-secondary: #f5f0ec;
+  --color-primary: #0e9874;
+  --button-disabled: #90d0bf;
+  --color-text-gray: #344054;
+  --color-text-natural: #404040;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: var(--font-size);
+  font-family: var(--font-family);
+  line-height: var(--line-height);
+}
+
+label {
+  font-family: var(--font-family);
+  font-size: small;
+  font-weight: 500;
+  color: var(--color-text-gray);
+}
+
+// .flag-dropdown {
+//   background-color: #000;
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+//   width: 62px;
+//   border: none;
+//   border-radius: 8px;
+//   z-index: 100;
+//   overflow: visible;
+// }

@@ -1,0 +1,85 @@
+/* Custom styles for PhoneInput component */
+.react-tel-input {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  position: relative;
+  z-index: 2;
+
+  .flag-dropdown {
+    background-color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 62px;
+    border: none;
+    border-radius: 8px;
+    z-index: 100;
+    border: #ffffff;
+    outline: none;
+    border-radius: 8px;
+    z-index: 100;
+    // overflow: hidden;
+
+    .selected-flag {
+      background-color: #ffffff;
+      border: 1px solid #d0d5dd;
+      padding: 0.5rem;
+      width: 62px;
+      border-radius: 8px;
+      border: none;
+
+      .flag {
+        margin-left: 5px;
+        transform: scale(1.7);
+      }
+      // .arrow {
+      //   margin-left: 0.5rem;
+      // }
+
+      &:hover {
+        background-color: #e0e3e8;
+      }
+    }
+
+    .country-list {
+      position: absolute;
+      z-index: 10;
+      top: 100%;
+      left: 0;
+      right: 0;
+      max-height: 200px; // or any suitable height
+      overflow-y: auto;
+      background: white;
+      border: 1px solid #ccc;
+
+      .country {
+        &:hover {
+          background-color: #e0e3e8;
+        }
+      }
+    }
+  }
+
+  input[type="tel"].form-control {
+    width: 300px;
+    margin-left: 70px;
+    border: 1px solid #d0d5dd;
+    border-radius: 0.5rem;
+    padding-left: 10px;
+    height: 40px;
+    color: #2d2d2d;
+    background-color: #ffffff;
+    font-size: 1rem;
+    font-weight: 500;
+
+    &:focus {
+      border-color: #a0a5ad;
+      box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+    }
+
+    @media (max-width: 500px) {
+      width: 260px;
+    }
+  }
+}

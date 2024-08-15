@@ -49,6 +49,10 @@
         outline: #5ebaa2;
         box-shadow: 0 0 0 0.2rem rgba(94, 186, 162, 0.25);
       }
+
+      @media (max-width: 500px) {
+        width: 160px;
+      }
     }
 
     @media (max-width: 500px) {

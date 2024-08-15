@@ -38,10 +38,14 @@ function SignUp2() {
           </p>
         </div>
         <div className="form-mob-section">
-          <img src={LogoMob} className="" />
+          <Link to="/">
+            <img src={LogoMob} className="LogoMob" />
+          </Link>
           <div className="home-div">
             <img src={Home} className="" />
-            <p className="right">Back Home</p>
+            <Link to="/signin">
+              <p className="right">Back Home</p>
+            </Link>
           </div>
         </div>
         <div className="form-container">

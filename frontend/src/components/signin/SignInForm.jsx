@@ -3,14 +3,11 @@ import "../../scss/components/signin/signInForm.scss";
 import { FaEye, FaEyeSlash } from "react-icons/fa";
 
 import FingerPrint from "../../assets/signin/finger-print.svg";
+import { Link } from "react-router-dom";
 
 function SignInForm() {
   const [password, setPassword] = useState("");
   const [showPassword, setShowPassword] = useState(false);
-  const [showConfirmPassword, setShowConfirmPassword] = useState(false);
-  // Validation states
-  const [hasSpecialChar, setHasSpecialChar] = useState(false);
-  const [isLongEnough, setIsLongEnough] = useState(false);
 
   const validatePassword = (password) => {
     const hasSpecialChar = /[!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]+/.test(
@@ -96,8 +93,12 @@ function SignInForm() {
             Login
           </button>
         </form>
+
         <p className="signin-create-account">
-          Don't have an account?<p className="signup">Sign up</p>
+          Don't have an account?{" "}
+          <Link to="/" className="signup">
+            <p className="signup">Sign up</p>
+          </Link>
         </p>
       </div>
     </div>

@@ -9,6 +9,7 @@ import backgroundImage from "../../assets/signin/signin-bg.png";
 import ChevronLeft from "../../assets/signup/chevron-left.svg";
 import FormTwo from "../../components/signup/FormTwo";
 import SignInForm from "../../components/signin/SignInForm";
+import { Link } from "react-router-dom";
 
 function SignIn() {
   return (
@@ -29,10 +30,14 @@ function SignIn() {
           </p>
         </div>
         <div className="form-mob-section">
-          <img src={LogoMob} className="" />
+          <Link to="/">
+            <img src={LogoMob} className="LogoMob" />
+          </Link>
           <div className="home-div">
             <img src={Home} className="" />
-            <p className="right">Back Home</p>
+            <Link to="/signin" className="signup">
+              <p className="right">Back Home</p>
+            </Link>
           </div>
         </div>
         <div className="form-container">
